@@ -2,7 +2,7 @@ package datamanagement;
 
 public interface IStudent {
 
-    public Integer getID();
+    public Integer getId();
 
     public String getFirstName();
     public void setFirstName(String firstName);
