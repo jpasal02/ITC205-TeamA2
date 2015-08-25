@@ -34,7 +34,7 @@ return el;return null;
     is = new Student(new Integer(el.getAttributeValue("sid")),el.getAttributeValue("fname"),el.getAttributeValue("lname"),rlist);
 
     
-    sm.put(is.getId(), is);
+    sm.put(is.getID(), is);
         return is; }
 throw new RuntimeException("DBMD: createStudent : student not in file");}
     private IStudent createStudentProxy(Integer id) {
@@ -70,8 +70,8 @@ IStudent is;
             
             
             
-            is = createStudentProxy(new Integer(S.getStudentId()));
-    s.put(is.getId(), is);}
+            is = createStudentProxy(new Integer(S.getStudentID()));
+    s.put(is.getID(), is);}
     um.put( uc, s);
         return s;
 }}

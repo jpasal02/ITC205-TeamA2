@@ -13,7 +13,7 @@ public class Student implements IStudent {
 		this.studentUnitRecord = studentUnitRecord == null ? new StudentUnitRecordList() : studentUnitRecord;
 	}
 
-	public Integer getId() {
+	public Integer getID() {
 		return this.studentId;
 	}
 

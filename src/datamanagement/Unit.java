@@ -86,7 +86,7 @@ public class Unit implements IUnit {
 
 	public IStudentUnitRecord getStudentRecord(int studentID) {
 		for (IStudentUnitRecord r : rs) {
-			if (r.getStudentId() == studentID)
+			if (r.getStudentID() == studentID)
 				return r;
 		}
 		return null;

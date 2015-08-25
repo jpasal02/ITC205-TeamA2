@@ -15,7 +15,7 @@ private String l;
         this.Il = Il;
 this.lI = StudentManager.get();}
 
-    public Integer getId() { return I; 
+    public Integer getID() { return I; 
 
     
     

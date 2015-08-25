@@ -506,7 +506,7 @@ public class ChangeGradeInterface extends javax.swing.JFrame implements IUnitLis
 	}
 
 	public void addStudent(IStudent student) {
-		studentComboBoxModel.addElement(student.getId().toString() + " : " + student.getFirstName() + " " + student.getLastName());
+		studentComboBoxModel.addElement(student.getID().toString() + " : " + student.getFirstName() + " " + student.getLastName());
 	}
 
 	public void setState2(boolean b) {
