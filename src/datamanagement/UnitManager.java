@@ -6,22 +6,22 @@ import org.jdom.*;
 
 public class UnitManager {
 
-	private static UnitManager self = null;
+	private static UnitManager self_ = null;
 
-	private UnitMap unitMap_;
+	private UnitMap unitMap;
 
 	public static UnitManager unitManager() {
-		if (self == null)
-			self = new UnitManager();
-		return self;
+		if (self_ == null)
+			self_ = new UnitManager();
+		return self_;
 	}
 
 	private UnitManager() {
-		unitMap_ = new UnitMap();
+		unitMap = new UnitMap();
 	}
 
 	public IUnit getUnit(String unitCreate) {
-		IUnit iUnit = unitMap_.get(unitCreate);
+		IUnit iUnit = unitMap.get(unitCreate);
 		return iUnit != null ? iUnit : createUnit(unitCreate);
 
 	}
@@ -54,7 +54,7 @@ public class UnitManager {
 								element.getAttributeValue("examwgt"))
 								.intValue(), StudentUnitRecordManager
 								.instance().getRecordsByUnit(unitCode));
-				unitMap_.put(iUnit.getUnitCode(), iUnit);
+				unitMap.put(iUnit.getUnitCode(), iUnit);
 				return iUnit;
 			}
 
