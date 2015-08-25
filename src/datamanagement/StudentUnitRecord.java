@@ -5,8 +5,7 @@ public class StudentUnitRecord implements IStudentUnitRecord {
 	private String unitCode;
 	private float assignment1, assignment2, exam;
 
-	public StudentUnitRecord(Integer id, String code, float asg1, float asg2,
-			float exam) {
+	public StudentUnitRecord(Integer id, String code, float asg1, float asg2, float exam) {
 		this.studentID = id;
 		this.unitCode = code;
 		this.setAsg1(asg1);
